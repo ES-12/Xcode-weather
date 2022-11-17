@@ -14,7 +14,6 @@ class CitiesList: UITableViewController {
     struct City {
         var name: String
         var temp_c: Double
-        var country: String
     }
     
     var cities: [City] = []
@@ -56,9 +55,8 @@ class CitiesList: UITableViewController {
                 let json = JSON(value!)
                 let name = json["location"]["name"].stringValue
                 let temp_c = json["current"]["temp_c"].doubleValue
-                let country = json["location"]["country"].stringValue
                 guard !checkCity(name: name) else { return alertController(message: "City already added") }
-                cities.append(City(name: name, temp_c: temp_c, country: country))
+                cities.append(City(name: name, temp_c: temp_c))
                 tableView.reloadData()
             case .failure(let error):
                 print(error)
