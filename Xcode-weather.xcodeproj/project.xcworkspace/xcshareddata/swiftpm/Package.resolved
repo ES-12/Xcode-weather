@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "state": {
+          "branch": "master",
+          "revision": "7884a65c6c251088c95eae70acd9adfd08fa7c68",
+          "version": null
+        }
+      },
+      {
+        "package": "SwiftyJSON",
+        "repositoryURL": "https://github.com/SwiftyJSON/SwiftyJSON.git",
+        "state": {
+          "branch": "master",
+          "revision": "af1f7a2007d607fbe735c445f19080df4260fe8e",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
